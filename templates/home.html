@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us" >
+<head>
+	<title>LCPS Mass SMS Service - User data input</title>
+	<style>
+		html, body {
+			font-family: helvetica, arial, sans;
+			font-size: 12px;
+		}
+
+		#formbox {
+			text-align: center;
+			width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#formbox p {
+			text-align: justify;
+		}
+
+		#formtable {
+			text-align: left;
+			margin-left: auto;
+			margin-right: auto;
+			border: 10px solid;
+			padding: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div id="formbox">
+	<form action ="" method="post">
+		{% csrf_token %}
+		<h1>LCPS Mass SMS send system</h3>
+		<table id="formtable">
+			{{ form }}
+
+			<tr>
+				<td><input type="submit" value="Submit" />
+		</table>
+	</form>
+	</div>
+</body>
+</html>
